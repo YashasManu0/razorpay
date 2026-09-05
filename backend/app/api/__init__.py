@@ -1,0 +1,10 @@
+from app.api.merchants import router as merchants_router
+from app.api.products import router as products_router
+from app.api.inventory import router as inventory_router
+from app.api.policies import router as policies_router
+from app.api.negotiations import router as negotiations_router
+from app.api.payments import router as payments_router
+from app.api.analytics import router as analytics_router
+from app.api.audit import router as audit_router
+from app.api.failure_injection import router as failure_router
+from app.api.simulation import router as simulation_router

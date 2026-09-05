@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   RAZORPAY MIDNIGHT AMBIENT BACKGROUND
+   ============================================================ */
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background-color: #02042B;
+  background-image:
+    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(12, 131, 253, 0.25) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 40% at 90% 25%,  rgba(0, 186, 242, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 10% 75%,  rgba(12, 131, 253, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(0, 186, 116, 0.06) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   RAZORPAY FINTECH SURFACES & CARDS
+   ============================================================ */
+.glass {
+  background: rgba(11, 21, 46, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(12, 131, 253, 0.18);
+  box-shadow: 0 8px 32px rgba(2, 4, 43, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.glass-dark {
+  background: rgba(8, 16, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(12, 131, 253, 0.14);
+  box-shadow: 0 8px 32px rgba(2, 4, 43, 0.6);
+}
+.glass-strong {
+  background: rgba(11, 21, 46, 0.88);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(12, 131, 253, 0.25);
+}
+
+/* ============================================================
+   NEON GLOW UTILITIES
+   ============================================================ */
+.glow-blue    { box-shadow: 0 0 20px rgba(56,189,248,0.40),  0 0 60px rgba(56,189,248,0.12); }
+.glow-cyan    { box-shadow: 0 0 20px rgba(34,211,238,0.40),  0 0 60px rgba(34,211,238,0.12); }
+.glow-emerald { box-shadow: 0 0 20px rgba(52,211,153,0.40),  0 0 60px rgba(52,211,153,0.12); }
+.glow-purple  { box-shadow: 0 0 20px rgba(167,139,250,0.40), 0 0 60px rgba(167,139,250,0.12); }
+.glow-rose    { box-shadow: 0 0 20px rgba(251,113,133,0.40), 0 0 60px rgba(251,113,133,0.12); }
+.glow-amber   { box-shadow: 0 0 20px rgba(251,191,36,0.40),  0 0 60px rgba(251,191,36,0.12); }
+
+.text-glow-blue    { text-shadow: 0 0 12px rgba(56,189,248,0.7); }
+.text-glow-emerald { text-shadow: 0 0 12px rgba(52,211,153,0.7); }
+.text-glow-purple  { text-shadow: 0 0 12px rgba(167,139,250,0.7); }
+.text-glow-cyan    { text-shadow: 0 0 12px rgba(34,211,238,0.7); }
+.text-glow-rose    { text-shadow: 0 0 12px rgba(251,113,133,0.7); }
+
+/* ============================================================
+   BUTTON UTILITIES
+   ============================================================ */
+.btn-solid-blue {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  color: white;
+  border: 1px solid rgba(99,102,241,0.4);
+  box-shadow: 0 0 24px rgba(56,189,248,0.25);
+  transition: all 0.2s ease;
+}
+.btn-solid-blue:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  box-shadow: 0 0 32px rgba(56,189,248,0.45);
+}
+.btn-solid-emerald {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  color: white;
+  border: 1px solid rgba(52,211,153,0.4);
+  box-shadow: 0 0 24px rgba(52,211,153,0.25);
+  transition: all 0.2s ease;
+}
+.btn-solid-emerald:hover {
+  background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  box-shadow: 0 0 32px rgba(52,211,153,0.45);
+}
+.btn-neon-blue {
+  background: rgba(56,189,248,0.12);
+  border: 1px solid rgba(56,189,248,0.40);
+  color: #7dd3fc;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+.btn-neon-blue:hover {
+  background: rgba(56,189,248,0.22);
+  box-shadow: 0 0 20px rgba(56,189,248,0.35);
+  color: #fff;
+}
+.btn-neon-emerald {
+  background: rgba(52,211,153,0.12);
+  border: 1px solid rgba(52,211,153,0.40);
+  color: #6ee7b7;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+.btn-neon-emerald:hover {
+  background: rgba(52,211,153,0.22);
+  box-shadow: 0 0 20px rgba(52,211,153,0.35);
+  color: #fff;
+}
+
+/* ============================================================
+   INPUT / FORM GLASS STYLES
+   ============================================================ */
+.input-glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #f1f5f9;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-glass:focus {
+  outline: none;
+  border-color: rgba(56,189,248,0.55);
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.12);
+}
+.input-glass::placeholder { color: rgba(148,163,184,0.50); }
+
+/* ============================================================
+   TABLE GLASS STYLES
+   ============================================================ */
+.table-glass thead th {
+  background: rgba(255,255,255,0.03);
+  color: rgba(148,163,184,0.80);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.table-glass tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.15s;
+}
+.table-glass tbody tr:hover { background: rgba(255,255,255,0.04); }
+.table-glass tbody td { padding: 12px 14px; font-size: 0.75rem; color: #cbd5e1; }
+
+/* ============================================================
+   MISC
+   ============================================================ */
+.mono { font-family: 'JetBrains Mono', monospace; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Glass scrollbar */
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+
